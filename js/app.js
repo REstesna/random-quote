@@ -39,7 +39,7 @@ async function getQuoteFromApi() {
     newQuoteBtn.disabled = true;
     await new Promise(requestAnimationFrame);
   try {
-    let quotePromise = await fetch("https://quotes-api-self.vercel.app/qضuote");
+    let quotePromise = await fetch("https://quotes-api-self.vercel.app/quote");
     let data = await quotePromise.json();
 
     return data;
